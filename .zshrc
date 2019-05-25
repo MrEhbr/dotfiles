@@ -1,12 +1,21 @@
-
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export TERM="xterm-256color"
+
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=5000
+setopt autocd
+bindkey -e
+zstyle :compinstall filename '/Users/mr.ehbr/.zshrc'
+
+autoload -Uz compinit
+compinit
 
 # plugins=(docker history kubectl dircycle tmux zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 
 autoload -U compinit && compinit
 
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=${ZSH_TMUX_AUTOSTART:-true}
 
 export LANG=en_US.UTF-8
 
