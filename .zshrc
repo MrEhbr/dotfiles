@@ -20,5 +20,7 @@ ZSH_TMUX_AUTOSTART=${ZSH_TMUX_AUTOSTART:-true}
 export LANG=en_US.UTF-8
 
 alias zshconfig="nano ~/.zshrc"
+# MS visual code
+code () { open -n -b "com.microsoft.VSCode" --args $* ;}
 
 source $HOME/.dotfiles/antigen.zsh
