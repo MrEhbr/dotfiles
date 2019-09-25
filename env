@@ -1,4 +1,4 @@
-export GOPATH="$HOME/Projects/Go"
+export GOPATH="$HOME/Go"
 export GOBIN="$GOPATH/bin"
 export PATH=$PATH:$GOBIN
 export KUBECONFIG="$HOME/.kube/config"
