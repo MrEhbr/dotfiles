@@ -9,6 +9,7 @@ source /usr/local/share/antigen/antigen.zsh
 antigen bundle git
 antigen bundle tmux
 antigen bundle common-aliases
+antigen bundle kubectl
 antigen bundle zsh-users zsh-autosuggestions
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle tymm/zsh-directory-history
