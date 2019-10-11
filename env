@@ -1,5 +1,5 @@
-export GOPATH="$HOME/Go"
 export GOBIN="$GOPATH/bin"
+export CDPATH=$CDPATH:$GOPATH/src
 export PATH=$PATH:$GOBIN
 export KUBECONFIG="$HOME/.kube/config"
 
