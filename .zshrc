@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/bin:$PATH
 export TERM="xterm-256color"
 
 HISTFILE=~/.histfile
@@ -19,8 +19,6 @@ ZSH_TMUX_AUTOSTART=${ZSH_TMUX_AUTOSTART:-true}
 
 export LANG=en_US.UTF-8
 
-alias zshconfig="nano ~/.zshrc"
-# MS visual code
-code () { open -n -b "com.microsoft.VSCode" --args $* ;}
+alias zshconfig="vi ~/.zshrc"
 
 source $HOME/.dotfiles/antigen.zsh

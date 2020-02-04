@@ -3,21 +3,20 @@ source /usr/local/share/antigen/antigen.zsh
 
 
 [ -e "${HOME}/.dotfiles/env" ] && source "${HOME}/.dotfiles/env"
-[ -e "${HOME}/.dotfiles/spaceship-prompt" ] && source "${HOME}/.dotfiles/spaceship-prompt"
+[ -e "${HOME}/.dotfiles/theme" ] && source "${HOME}/.dotfiles/theme"
 
-
-antigen bundle git
-antigen bundle tmux
+antigen use oh-my-zsh
+antigen bundle brew
+antigen bundle command-not-found
 antigen bundle common-aliases
-antigen bundle kubectl
-antigen bundle zsh-users zsh-autosuggestions
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle git
+antigen bundle golang
+antigen bundle tmux
+antigen bundle zsh-users
+antigen bundle zsh-autosuggestions
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle tymm/zsh-directory-history
-antigen bundle unixorn/docker-helpers.zshplugin
-antigen bundle command-not-found
-antigen bundle djui/alias-tips
-antigen bundle bundler
-antigen use oh-my-zsh
-
-antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
