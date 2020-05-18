@@ -1,8 +1,17 @@
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH="$HOME/Projects/Go"
 export GOBIN="$GOPATH/bin"
-export CDPATH=$CDPATH:$GOPATH/src
-export PATH=$PATH:$GOBIN
-export PATH=$PATH:$GOROOT/bin
+export CDPATH="$CDPATH:$GOPATH/src"
+export PATH="$PATH:$GOBIN"
+export PATH="$PATH:$GOROOT/bin"
 export KUBECONFIG="$HOME/.kube/config"
 export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
+export GOPRIVATE="gitlab.mobbtech.com/*"
+
+## declare an array variable
+declare -a arr=("GOROOT" "GOPATH" "GOBIN" "CDPATH" "PATH" "KUBECONFIG" "ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX" "GOPRIVATE")
+
+for i in "${arr[@]}"
+do
+   launchctl setenv $i "$(printenv $i)"
+done
