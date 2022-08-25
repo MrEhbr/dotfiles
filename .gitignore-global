@@ -37,5 +37,3 @@ gin-bin
 .idea
 .vscode/
 .history/
-
-fish/conf.d/private_*.fish
