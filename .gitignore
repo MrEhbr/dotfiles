@@ -39,3 +39,4 @@ gin-bin
 .history/
 
 fish/conf.d/private_*.fish
+nvim/plugin
